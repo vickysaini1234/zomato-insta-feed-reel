@@ -8,6 +8,7 @@ import Home from '../pages/general/Home'
 import CreateFoodPartner from '../pages/foodPartner/CreateFoodPartner'
 import Profile from '../pages/foodPartner/Profile'
 import Slider from '../pages/slider/Slider'
+import Save from '../pages/general/Save'
 const AppRoutes = () => {
   return (
     <>
@@ -18,9 +19,11 @@ const AppRoutes = () => {
             <Route path='/food-partner/register' element={<FoodPartnerRegister/>}/>
             <Route path='/food-partner/login' element={<FoodPartnerLogin/>}/>
             <Route path='/home' element={<Home/>}/>
+            <Route path='/save' element={<Save/>}/>
             <Route path='/' element={<Slider/>}/>
             <Route path='/create-food' element={<CreateFoodPartner/>}/>
             <Route path='/food-partner/:id' element={<Profile/>}/>
+            
         </Routes>
     </Router>
       
